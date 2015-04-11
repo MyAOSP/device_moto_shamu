@@ -360,3 +360,7 @@ PRODUCT_OEM_PROPERTIES := \
 # Copy the qcril.db file from qcril to system. Useful to get the radio tech family for the camped operator
 PRODUCT_COPY_FILES += \
     device/moto/shamu/qcril.db:system/etc/ril/qcril.db
+
+# Copy stock bootanimation from nexus 6
+PRODUCT_COPY_FILES += \
+    device/moto/shamu/bootanimation.zip:system/media/bootanimation.zip

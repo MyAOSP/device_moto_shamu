@@ -11,6 +11,9 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
+# Inherit Google apps
+$(call inherit-product, vendor/google/apps/google-apps-all.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-cm
 
 ## Device identifier. This must come after all inclusions
